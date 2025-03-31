@@ -1,8 +1,10 @@
 let gun = document.getElementById("gun");
 let gunSound = document.getElementById("gunSound");
 let song = document.getElementById("song");
+let triggerButton = document.getElementById("trigger-button");
 
-gun.addEventListener("click", function() {
+triggerButton.addEventListener("click", function() {
+    triggerButton.style.display = "none"; // Hide button after clicking
     gun.src = "original.gif";
     gunSound.play();
 
@@ -11,7 +13,6 @@ gun.addEventListener("click", function() {
     }, 2000); 
 
     setTimeout(() => {
-        // Fade out the volume over 2 seconds
         let volume = 1.0;
         const fadeInterval = setInterval(() => {
             if (volume > 0.2) {
@@ -19,7 +20,7 @@ gun.addEventListener("click", function() {
                 song.volume = volume;
             } else {
                 clearInterval(fadeInterval);
-                song.volume = 0.2; // Set final background volume
+                song.volume = 0.2;
             }
         }, 200);
 
@@ -28,7 +29,6 @@ gun.addEventListener("click", function() {
 });
 
 function loadBandPage() {
-    // Create new div instead of replacing entire body
     const bandPageDiv = document.createElement('div');
     bandPageDiv.id = 'band-page';
     bandPageDiv.innerHTML = `
