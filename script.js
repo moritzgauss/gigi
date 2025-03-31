@@ -30,7 +30,7 @@ triggerButton.addEventListener("click", function() {
         }, 200);
 
         loadBandPage();
-    }, 8000);
+    }, 5000);
 });
 
 function loadBandPage() {
