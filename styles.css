@@ -12,6 +12,18 @@ body {
     text-align: center;
 }
 
+.trigger-button-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#trigger-button {
+    width: 300px; /* Adjust size as needed */
+    cursor: pointer;
+}
+
 .gun-container {
     position: absolute;
     width: 100vw;
@@ -24,7 +36,6 @@ body {
     object-fit: cover;
     cursor: pointer;
 }
-
 #band-page {
     display: none;
     background: url('stillgun.png') no-repeat center center fixed;
