@@ -4,7 +4,12 @@ let song = document.getElementById("song");
 let triggerButton = document.getElementById("trigger-button");
 
 triggerButton.addEventListener("click", function() {
-    triggerButton.style.display = "none"; // Hide button after clicking
+    // Fade out the button
+    triggerButton.style.opacity = "0";
+    setTimeout(() => {
+        triggerButton.style.display = "none";
+    }, 300);
+
     gun.src = "original.gif";
     gunSound.play();
 
