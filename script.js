@@ -39,12 +39,12 @@ function loadBandPage() {
     bandPageDiv.innerHTML = `
         <div id="band-page">
             <img id="logo" src="logov1.png">
-            <h1>Gigi Clow Cooperation</h1>
+            <h1>Gigi Blow Cooperation</h1>
             <ul class="tour-dates">
-                <li>12.04.2025 - Berlin, SO36 <a href="#">Tickets</a></li>
-                <li>18.04.2025 - Wien, Arena <a href="#">Tickets</a></li>
-                <li>25.04.2025 - Zürich, Rote Fabrik <a href="#">Tickets</a></li>
-                <li>01.05.2025 - London, The Underworld <a href="#">Tickets</a></li>
+                <li>12.04.2025 - random, location <a href="#">Tickets</a></li>
+                <li>18.04.2025 - Random, location <a href="#">Tickets</a></li>
+                <li>25.04.2025 - random, location <a href="#">Tickets</a></li>
+                <li>01.05.2025 - random, location <a href="#">Tickets</a></li>
             </ul>
         </div>
     `;
